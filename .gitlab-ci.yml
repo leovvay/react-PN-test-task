@@ -1,0 +1,28 @@
+image: node:dubnium
+
+variables:
+    GIT_DEPTH: 10
+    GIT_STRATEGY: clone
+
+before_script:
+    - yarn install --pure-lockfile --non-interactive
+
+cache:
+    key: '$CI_COMMIT_REF_NAME-$CI_PROJECT_ID'
+    paths:
+        - node_modules/
+
+stages:
+    - test
+
+test:
+    stage: test
+    only:
+        - develop
+        - master
+        - /^feature\/.*$/
+        - /^bugfix\/.*$/
+        - /^test\/.*$/
+    script:
+        - yarn lint
+        - yarn test
