@@ -1,7 +1,17 @@
-# Interview test
+# Welcome to Interview test project!
 
-1. Go to Gitlab issues
-2. Find assigned issue to you
-3. Commit your solution to separate branch
-4. Open merge request when you are done
-5. Follow development guidelines (see in Gitlab wiki)
+This is a test project to let you demonstrate:
+
+* Knowlege of React/Redux 
+* Code style
+* Code quality
+* Ability to understand and follow project rules
+
+## Next steps:
+
+1. Please read the [project's development guidelines](../wikis/Development-Guidelines)  in Gitlab Wiki
+2. Under **Issues** you will find a task assigned to you. This is your task!
+3. Update task status once you start working and add [time spent using `/spent`](https://docs.gitlab.com/ee/user/project/time_tracking.html) .
+4. Once you done commit your changes to branch and create Merge Request.
+
+Looking forward to your result and have a great time!
